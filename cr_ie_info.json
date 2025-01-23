@@ -1,0 +1,22 @@
+{
+	"system" : {
+		"platform" : "windows64",
+		"os_name" : "Windows 10",
+		"os_version" : "10.0"
+	},
+	"error" : {
+		"executable" : "quartus_eda",
+		"comment" : "not_applicable",
+		"error_message" : "Access Violation at 0X00007FFB244F1546",
+		"source_file" : "unknown",
+		"line" : "0",
+		"stack_trace" : "\t0x7ffb244f1545: DB_HDB + 0x11545 (?get_source_component@HDB_INSTANCE_NAME@@QEAAPEAVHDB_SOURCE_COMPONENT@@XZ + 0x5)\n\t0x7ffb2101f8be: comp_qcu + 0x1f8be (?qcu_add_common_summary@@YAPEAVRDB_SUMMARY_TABLE_OBJECT@@PEAVQCU_FRAMEWORK@@_NPEBD@Z + 0x26e)\n\t0x7ff6715b02fa: quartus_eda + 0x102fa (?write_reports@QNETO_FRAMEWORK@@UEAA_N_NPEBD@Z + 0x10a)\n\t0x7ffb959a1337: comp_qexe + 0x11337 (qexe_do_normal + 0x267)\n\t0x7ffb959a6142: comp_qexe + 0x16142 (qexe_run + 0x432)\n\t0x7ffb959a6e51: comp_qexe + 0x16e51 (?qexe_standard_main@@YAHPEAVQEXE_FRAMEWORK@@PEAPEBUQEXE_OPTION_DEFINITION@@HPEAPEBD@Z + 0xc1)\n\t0x7ff6715afaad: quartus_eda + 0xfaad (?qneto_main@@YAHHPEAPEBD@Z + 0x9d)\n\t0x7ffb87b52d68: CCL_MSG + 0x12d68 (?msg_main_thread@@YAPEAXPEAX@Z + 0x18)\n\t0x7ffb87b5454e: CCL_MSG + 0x1454e (?msg_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x6e)\n\t0x7ffb87c55b00: ccl_mem + 0x15b00 (?mem_thread_wrapper@@YAPEAXP6APEAXPEAX@Z0@Z + 0x70)\n\t0x7ffb87b52631: CCL_MSG + 0x12631 (?msg_exe_main@@YAHHPEAPEBDP6AHH0@Z@Z + 0xa1)\n\t0x7ff6715c9b32: quartus_eda + 0x29b32 (__tmainCRTStartup + 0x10e)\n\t0x7ffba098e8d6: KERNEL32 + 0x2e8d6 (BaseThreadInitThunk + 0x16)\n\t0x7ffba211fbcb: ntdll + 0xdfbcb (RtlUserThreadStart + 0x2b)\n",
+		"subsystem" : "unknown"
+	},
+	"quartus" : {
+		"quartus_bits" : "64",
+		"version" : "17.0.0",
+		"build" : "595",
+		"edition" : "Lite Edition"
+	}
+}

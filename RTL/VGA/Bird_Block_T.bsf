@@ -1,0 +1,142 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 288 272)
+	(text "Bird_Block_T" (rect 5 0 84 19)(font "Intel Clear" (font_size 8)))
+	(text "inst" (rect 8 235 24 252)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "levelChange" (rect 0 0 71 19)(font "Intel Clear" (font_size 8)))
+		(text "levelChange" (rect 21 27 92 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "pixelX[10..0]" (rect 0 0 75 19)(font "Intel Clear" (font_size 8)))
+		(text "pixelX[10..0]" (rect 21 43 96 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48)(line_width 3))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "pixelY[10..0]" (rect 0 0 75 19)(font "Intel Clear" (font_size 8)))
+		(text "pixelY[10..0]" (rect 21 59 96 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "clk" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 75 37 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "resetN" (rect 0 0 38 19)(font "Intel Clear" (font_size 8)))
+		(text "resetN" (rect 21 91 59 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "startOfFrame" (rect 0 0 79 19)(font "Intel Clear" (font_size 8)))
+		(text "startOfFrame" (rect 21 107 100 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "initial_x_speed[10..0]" (rect 0 0 128 19)(font "Intel Clear" (font_size 8)))
+		(text "initial_x_speed[10..0]" (rect 21 123 149 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "initial_x[10..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
+		(text "initial_x[10..0]" (rect 21 139 105 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "initial_y[10..0]" (rect 0 0 86 19)(font "Intel Clear" (font_size 8)))
+		(text "initial_y[10..0]" (rect 21 155 107 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "fire_the_bird" (rect 0 0 77 19)(font "Intel Clear" (font_size 8)))
+		(text "fire_the_bird" (rect 21 171 98 190)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "bird_collision" (rect 0 0 79 19)(font "Intel Clear" (font_size 8)))
+		(text "bird_collision" (rect 21 187 100 206)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "birdEnemy_collision" (rect 0 0 119 19)(font "Intel Clear" (font_size 8)))
+		(text "birdEnemy_collision" (rect 21 203 140 222)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 208)(pt 16 208))
+	)
+	(port
+		(pt 272 32)
+		(output)
+		(text "birdDR" (rect 0 0 42 19)(font "Intel Clear" (font_size 8)))
+		(text "birdDR" (rect 209 27 251 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 272 32)(pt 256 32))
+	)
+	(port
+		(pt 272 48)
+		(output)
+		(text "birdRGB[7..0]" (rect 0 0 81 19)(font "Intel Clear" (font_size 8)))
+		(text "birdRGB[7..0]" (rect 170 43 251 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 272 48)(pt 256 48)(line_width 3))
+	)
+	(port
+		(pt 272 64)
+		(output)
+		(text "tracesDR" (rect 0 0 53 19)(font "Intel Clear" (font_size 8)))
+		(text "tracesDR" (rect 198 59 251 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 272 64)(pt 256 64))
+	)
+	(port
+		(pt 272 80)
+		(output)
+		(text "tracesRGB[7..0]" (rect 0 0 92 19)(font "Intel Clear" (font_size 8)))
+		(text "tracesRGB[7..0]" (rect 159 75 251 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 272 80)(pt 256 80)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 256 240))
+	)
+)

@@ -1,0 +1,167 @@
+Archive Project report for Lab1Demo
+Mon Jan 20 18:36:13 2025
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Archive Project Summary
+  3. Archive Project Messages
+  4. Files Archived
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++----------------------------------------------------------------+
+; Archive Project Summary                                        ;
++------------------------+---------------------------------------+
+; Archive Project Status ; Successful - Mon Jan 20 18:36:13 2025 ;
+; Revision Name          ; Lab1Demo                              ;
+; Top-level Entity Name  ; TOP_VGA_DEMO_KBD                      ;
+; Family                 ; Cyclone V                             ;
++------------------------+---------------------------------------+
+
+
++--------------------------+
+; Archive Project Messages ;
++--------------------------+
+Info: File Set 'Source control' contains:
+    Info: Project source and settings files
+    Info: Automatically detected source files
+Info: Archive will store files relative to the closest common parent directory
+Info (13213): Using common directory C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated archive 'C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Alen_Tomer_FinalProject.qar'
+Info: ----------------------------------------------------------
+Info: ----------------------------------------------------------
+Info: Generated report 'Lab1Demo.archive.rpt'
+Info (23030): Evaluation of Tcl script c:/technion/lab1a/quartuslite/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4839 megabytes
+    Info: Processing ended: Mon Jan 20 18:36:13 2025
+    Info: Elapsed time: 00:00:04
+    Info: Total CPU time (on all processors): 00:00:02
+
+
++------------------------------------------------------------+
+; Files Archived                                             ;
++------------------------------------------------------------+
+; File Name                                                  ;
++------------------------------------------------------------+
+; assignment_defaults.qdf                                    ;
+; CLK_31P5.cmp                                               ;
+; CLK_31P5.qip                                               ;
+; CLK_31P5.sip                                               ;
+; CLK_31P5.spd                                               ;
+; CLK_31P5.v                                                 ;
+; CLK_31P5/CLK_31P5_0002.qip                                 ;
+; CLK_31P5/CLK_31P5_0002.v                                   ;
+; CLK_31P5_sim/CLK_31P5.vo                                   ;
+; constraints/DE10_Standard_Audio.sdc                        ;
+; constraints/pin.tcl                                        ;
+; db/stp4_auto_stripped.stp                                  ;
+; DE10_Standard_Audio.sdc                                    ;
+; House_X.sv                                                 ;
+; KBDINTF.qxp                                                ;
+; Lab1Demo.qpf                                               ;
+; Lab1Demo.qsf                                               ;
+; Lab1Demo_assignment_defaults.qdf                           ;
+; Number_position.bsf                                        ;
+; Number_position.qip                                        ;
+; Number_position.v                                          ;
+; Number_position_bb.v                                       ;
+; output_files/Chain1.cdf                                    ;
+; output_files/stp4.stp                                      ;
+; RTL/AUDIO/addr_counter.sv                                  ;
+; RTL/AUDIO/AUDIO.bdf                                        ;
+; RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv ;
+; RTL/AUDIO/audio_codec_controller/clock_500.sv              ;
+; RTL/AUDIO/audio_codec_controller/DualSerial2parallel.sv    ;
+; RTL/AUDIO/audio_codec_controller/i2c.sv                    ;
+; RTL/AUDIO/prescaler.sv                                     ;
+; RTL/AUDIO/SinTable.sv                                      ;
+; RTL/AUDIO/ToneDecoder.sv                                   ;
+; RTL/AUDIO/TOP_AUDIO.bdf                                    ;
+; RTL/backgroundBitMap.mif                                   ;
+; RTL/KEYBOARDX/keyPad_decoder.sv                            ;
+; RTL/KEYBOARDX/one_sec_counter.sv                           ;
+; RTL/KEYBOARDX/random.sv                                    ;
+; RTL/KEYBOARDX/simple_up_counter.sv                         ;
+; RTL/KEYBOARDX/TOP_KBD.bdf                                  ;
+; RTL/Seg7/SEG7.SV                                           ;
+; RTL/tatooine-backgrounBitMap.mif                           ;
+; RTL/VGA/back_ground_draw_old.sv                            ;
+; RTL/VGA/Bird_Block_T.bdf                                   ;
+; RTL/VGA/bird_control.sv                                    ;
+; RTL/VGA/bird_move.sv                                       ;
+; RTL/VGA/bird_traces.sv                                     ;
+; RTL/VGA/birdBitMap.sv                                      ;
+; RTL/VGA/BlackScreenBitMap.sv                               ;
+; RTL/VGA/EndGame_Block_T.bdf                                ;
+; RTL/VGA/Enemy_Block_T.bdf                                  ;
+; RTL/VGA/Enemy_move.sv                                      ;
+; RTL/VGA/EnemyBitMap.sv                                     ;
+; RTL/VGA/enemyY_position.sv                                 ;
+; RTL/VGA/game_controller.sv                                 ;
+; RTL/VGA/gameOverBitMap.sv                                  ;
+; RTL/VGA/GameOverX_position.sv                              ;
+; RTL/VGA/GameOverY_position.sv                              ;
+; RTL/VGA/heartX_position.sv                                 ;
+; RTL/VGA/heartY_position.sv                                 ;
+; RTL/VGA/House_Block_T.bdf                                  ;
+; RTL/VGA/houseMatrixBitMap.sv                               ;
+; RTL/VGA/Lives_X_position.sv                                ;
+; RTL/VGA/Lives_Y_Position.sv                                ;
+; RTL/VGA/livesHeartBitMap.sv                                ;
+; RTL/VGA/NumbersBitMap.sv                                   ;
+; RTL/VGA/objects_mux.sv                                     ;
+; RTL/VGA/plane_move.sv                                      ;
+; RTL/VGA/PlaneLives_Block_T.bdf                             ;
+; RTL/VGA/PlaneLives_controller.sv                           ;
+; RTL/VGA/preGameBitMap.sv                                   ;
+; RTL/VGA/preGameX_position.sv                               ;
+; RTL/VGA/random_Y.sv                                        ;
+; RTL/VGA/score_bitMap.sv                                    ;
+; RTL/VGA/Score_Block_T.bdf                                  ;
+; RTL/VGA/score_controller.sv                                ;
+; RTL/VGA/Smiley_Block_T.bdf                                 ;
+; RTL/VGA/smileyBitMap.sv                                    ;
+; RTL/VGA/square_object.sv                                   ;
+; RTL/VGA/TOP_VGA_DEMO_KBD.bdf                               ;
+; RTL/VGA/TracesBitMap.sv                                    ;
+; RTL/VGA/valX.bsf                                           ;
+; RTL/VGA/valX.qip                                           ;
+; RTL/VGA/valX.v                                             ;
+; RTL/VGA/valX_bb.v                                          ;
+; RTL/VGA/valX_inst.v                                        ;
+; RTL/VGA/VGA_Controller.sv                                  ;
+; RTL/VGA/win1Bitmap.sv                                      ;
+; RTL/VGA/win2BitMap.sv                                      ;
+; RTL/VGA/WinBitMap.sv                                       ;
+; RTL/VGA/WinX_position.sv                                   ;
+; Waveform2.vwf                                              ;
++------------------------------------------------------------+
+
+

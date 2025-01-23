@@ -1,0 +1,268 @@
+Determining the location of the ModelSim executable...
+
+Using: C:\Technion\lab1a\quartusLite\modelsim_ase\win32aloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Lab1Demo -c Lab1Demo --vector_source="C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Waveform2.vwf" --testbench_file="C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim/Waveform2.vwf.vt"
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Mon Jan 20 08:47:06 2025
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Lab1Demo -c Lab1Demo --vector_source=C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Waveform2.vwf --testbench_file=C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim/Waveform2.vwf.vt
+
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim/" Lab1Demo -c Lab1Demo
+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Mon Jan 20 08:47:09 2025
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim/ Lab1Demo -c Lab1Demo
+Info (204019): Generated file Lab1Demo.vo in folder "C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim//" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4960 megabytes
+    Info: Processing ended: Mon Jan 20 08:47:16 2025
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:07
+
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim/Lab1Demo.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+C:/Technion/lab1a/quartusLite/modelsim_ase/win32aloem/vsim -c -do Lab1Demo.do
+
+Reading C:/Technion/lab1a/quartusLite/modelsim_ase/tcl/vsim/pref.tcl
+
+# 10.5b
+
+
+# do Lab1Demo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:47:17 on Jan 20,2025
+# vlog -work work Lab1Demo.vo 
+# -- Compiling module TOP_VGA_DEMO_KBD
+
+# 
+# Top level modules:
+# 	TOP_VGA_DEMO_KBD
+# End time: 08:47:20 on Jan 20,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:47:20 on Jan 20,2025
+# vlog -work work Waveform2.vwf.vt 
+
+# -- Compiling module TOP_VGA_DEMO_KBD_vlg_vec_tst
+# 
+# Top level modules:
+# 	TOP_VGA_DEMO_KBD_vlg_vec_tst
+
+# End time: 08:47:21 on Jan 20,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.TOP_VGA_DEMO_KBD_vlg_vec_tst 
+# Start time: 08:47:21 on Jan 20,2025
+# Loading work.TOP_VGA_DEMO_KBD_vlg_vec_tst
+# Loading work.TOP_VGA_DEMO_KBD
+# Loading altera_ver.dffeas
+# Loading sv_std.std
+# Loading altera_lnsim_ver.generic_m10k
+# Loading altera_lnsim_ver.altera_lnsim_functions
+# Loading altera_lnsim_ver.common_28nm_ram_block
+# Loading altera_lnsim_ver.common_28nm_ram_register
+# Loading altera_lnsim_ver.common_28nm_ram_pulse_generator
+# Loading altera_lnsim_ver.altera_pll_reconfig_tasks
+# Loading altera_lnsim_ver.generic_device_pll
+# Loading altera_lnsim_ver.altera_generic_pll_functions
+# Loading altera_lnsim_ver.generic_pll
+# ** Warning: (vsim-3017) Waveform2.vwf.vt(50): [TFMPC] - Too few port connections. Expected 16, found 12.
+#    Time: 0 ps  Iteration: 0  Instance: /TOP_VGA_DEMO_KBD_vlg_vec_tst/i1 File: Lab1Demo.vo
+# ** Warning: (vsim-3722) Waveform2.vwf.vt(50): [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# ** Warning: (vsim-3722) Waveform2.vwf.vt(50): [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# ** Warning: (vsim-3722) Waveform2.vwf.vt(50): [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: (vsim-3722) Waveform2.vwf.vt(50): [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: (vsim-3017) Lab1Demo.vo(25845): [TFMPC] - Too few port connections. Expected 15, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /TOP_VGA_DEMO_KBD_vlg_vec_tst/i1/\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT  File: nofile
+# ** Warning: (vsim-3722) Lab1Demo.vo(25845): [TFMPC] - Missing connection for port 'pllen'.
+# ** Warning: (vsim-3017) (): [TFMPC] - Too few port connections. Expected , found .
+#    Time: 0 ps  Iteration: 0  Protected: /TOP_VGA_DEMO_KBD_vlg_vec_tst/i1/\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT // File: nofile
+# ** Warning: (vsim-3722) (): [TFMPC] - Missing connection for port ''.
+# ** Warning: (vsim-3017) Lab1Demo.vo(25883): [TFMPC] - Too few port connections. Expected 24, found 23.
+#    Time: 0 ps  Iteration: 0  Instance: /TOP_VGA_DEMO_KBD_vlg_vec_tst/i1/\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL  File: nofile
+# ** Warning: (vsim-3722) Lab1Demo.vo(25883): [TFMPC] - Missing connection for port 'vsspl'.
+# ** Warning: (vsim-3017) (): [TFMPC] - Too few port connections. Expected , found .
+#    Time: 0 ps  Iteration: 0  Protected: /TOP_VGA_DEMO_KBD_vlg_vec_tst/i1/\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_RECONFIG / File: nofile
+# ** Warning: (vsim-3722) (): [TFMPC] - Missing connection for port ''.
+# ** Warning: (vsim-3015) (): [PCDPC] - Port size () does not match connection size () for .
+#    Time: 0 ps  Iteration: 0  Protected: /TOP_VGA_DEMO_KBD_vlg_vec_tst/i1/\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~PLL_RECONFIG // File: nofile
+# ** Warning: (vsim-3017) Lab1Demo.vo(55741): [TFMPC] - Too few port connections. Expected 21, found 14.
+#    Time: 0 ps  Iteration: 0  Instance: /TOP_VGA_DEMO_KBD_vlg_vec_tst/i1/altera_internal_jtag File: nofile
+# ** Warning: (vsim-3722) Lab1Demo.vo(55741): [TFMPC] - Missing connection for port 'ntrst'.
+# ** Warning: (vsim-3722) Lab1Demo.vo(55741): [TFMPC] - Missing connection for port 'corectl'.
+# ** Warning: (vsim-3722) Lab1Demo.vo(55741): [TFMPC] - Missing connection for port 'ntdopinena'.
+# ** Warning: (vsim-3722) Lab1Demo.vo(55741): [TFMPC] - Missing connection for port 'tckcore'.
+# ** Warning: (vsim-3722) Lab1Demo.vo(55741): [TFMPC] - Missing connection for port 'tdicore'.
+# ** Warning: (vsim-3722) Lab1Demo.vo(55741): [TFMPC] - Missing connection for port 'tmscore'.
+# ** Warning: (vsim-3722) Lab1Demo.vo(55741): [TFMPC] - Missing connection for port 'tdocore'.
+# ** Warning: Design size of 144910 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+
+# after#25
+
+# 
+# Warning: por to CB BFM is not connected, internal por is used.
+# 
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (TOP_VGA_DEMO_KBD_vlg_vec_tst.i1.\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL ....inst_pll_phase_0.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = TOP_VGA_DEMO_KBD_vlg_vec_tst.i1.\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL ....inst_pll_phase_0.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 mhz
+# Info: output_clock_frequency = 630.0 mhz
+# Info: phase_shift = 0 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 793.650794
+# Info: output_clock_low_period = 793.650794
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (TOP_VGA_DEMO_KBD_vlg_vec_tst.i1.\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL ....inst_pll_phase_1.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = TOP_VGA_DEMO_KBD_vlg_vec_tst.i1.\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL ....inst_pll_phase_1.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 mhz
+# Info: output_clock_frequency = 630.0 mhz
+# Info: phase_shift = 198 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 793.650794
+# Info: output_clock_low_period = 793.650794
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (TOP_VGA_DEMO_KBD_vlg_vec_tst.i1.\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL ....inst_pll_phase_2.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = TOP_VGA_DEMO_KBD_vlg_vec_tst.i1.\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL ....inst_pll_phase_2.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 mhz
+# Info: output_clock_frequency = 630.0 mhz
+# Info: phase_shift = 396 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 793.650794
+# Info: output_clock_low_period = 793.650794
+# Info: =================================================
+# Info:           Generic PLL Summary
+# Info: =================================================
+# Time scale of (TOP_VGA_DEMO_KBD_vlg_vec_tst.i1.\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL ....inst_pll_phase_3.no_need_to_gen) is  1ps /  1ps
+# Info: hierarchical_name = TOP_VGA_DEMO_KBD_vlg_vec_tst.i1.\inst7|clk_31p5_inst|altera_pll_i|general[0].gpll~FRACTIONAL_PLL ....inst_pll_phase_3.no_need_to_gen
+# Info: reference_clock_frequency = 50.0 mhz
+# Info: output_clock_frequency = 630.0 mhz
+# Info: phase_shift = 594 ps
+# Info: duty_cycle = 50
+# Info: sim_additional_refclk_cycles_to_lock = 0
+# Info: output_clock_high_period = 793.650794
+# Info: output_clock_low_period = 793.650794
+# 
+# Warning: por to CB BFM is not connected, internal por is used.
+# 
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# Simulation time: 0 ps
+
+# ** Note: $finish    : Waveform2.vwf.vt(67)
+#    Time: 1 us  Iteration: 0  Instance: /TOP_VGA_DEMO_KBD_vlg_vec_tst
+# End time: 08:47:53 on Jan 20,2025, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 23
+
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Waveform2.vwf...
+
+Reading C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim/Lab1Demo.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: Fire_The_Bird_D - signal not found in VCD.
+
+Warning: SM_Motion.IDLE_ST - signal not found in VCD.
+
+Warning: SM_Motion.MOVE_ST - signal not found in VCD.
+
+Warning: SM_Motion.POSITION_CHANGE_ST - signal not found in VCD.
+
+Warning: SM_Motion.POSITION_LIMITS_ST - signal not found in VCD.
+
+Warning: SM_Motion.START_OF_FRAME_ST - signal not found in VCD.
+
+Warning: shoot - signal not found in VCD.
+
+Warning: clk - signal not found in VCD.
+
+Writing the resulting VWF to C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim/Lab1Demo_20250120064753.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

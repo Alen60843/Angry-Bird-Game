@@ -1,0 +1,133 @@
+Restore Archived Project report for Lab1Demo
+Tue Jan 21 16:35:11 2025
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Tue Jan 21 16:35:11 2025 ;
+; Revision Name                   ; Lab1Demo                              ;
+; Top-level Entity Name           ; TOP_VGA_DEMO_KBD                      ;
+; Family                          ; Cyclone V                             ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER.qar' into the 'C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/' directory
+Info: Generated report 'Lab1Demo.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/technion/lab1a/quartuslite/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 60 warnings
+    Info: Peak virtual memory: 4835 megabytes
+    Info: Processing ended: Tue Jan 21 16:35:11 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++----------------+
+; Files Restored ;
++----------------+
+; File Name      ;
++----------------+
+
+
++------------------------------------------------------------+
+; Files Not Restored                                         ;
++------------------------------------------------------------+
+; File Name                                                  ;
++------------------------------------------------------------+
+; qar_info.json                                              ;
+; CLK_31P5.cmp                                               ;
+; CLK_31P5.qip                                               ;
+; CLK_31P5.sip                                               ;
+; CLK_31P5.spd                                               ;
+; CLK_31P5.v                                                 ;
+; CLK_31P5/CLK_31P5_0002.qip                                 ;
+; CLK_31P5/CLK_31P5_0002.v                                   ;
+; CLK_31P5_sim/CLK_31P5.vo                                   ;
+; DE10_Standard_Audio.sdc                                    ;
+; KBDINTF.qxp                                                ;
+; Lab1Demo.qpf                                               ;
+; Lab1Demo.qsf                                               ;
+; Lab1Demo_assignment_defaults.qdf                           ;
+; Number_position.bsf                                        ;
+; Number_position.qip                                        ;
+; Number_position.v                                          ;
+; Number_position_bb.v                                       ;
+; RTL/AUDIO/AUDIO.bdf                                        ;
+; RTL/AUDIO/SinTable.sv                                      ;
+; RTL/AUDIO/TOP_AUDIO.bdf                                    ;
+; RTL/AUDIO/ToneDecoder.sv                                   ;
+; RTL/AUDIO/addr_counter.sv                                  ;
+; RTL/AUDIO/audio_codec_controller/DualSerial2parallel.sv    ;
+; RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv ;
+; RTL/AUDIO/audio_codec_controller/clock_500.sv              ;
+; RTL/AUDIO/audio_codec_controller/i2c.sv                    ;
+; RTL/AUDIO/prescaler.sv                                     ;
+; RTL/KEYBOARDX/TOP_KBD.bdf                                  ;
+; RTL/KEYBOARDX/keyPad_decoder.sv                            ;
+; RTL/KEYBOARDX/random.sv                                    ;
+; RTL/KEYBOARDX/simple_up_counter.sv                         ;
+; RTL/Seg7/SEG7.SV                                           ;
+; RTL/VGA/HART_DISPLAY.bdf                                   ;
+; RTL/VGA/HartsMatrixBitMap.sv                               ;
+; RTL/VGA/NumbersBitMap.sv                                   ;
+; RTL/VGA/Smiley_Block_T.bdf                                 ;
+; RTL/VGA/TOP_VGA_DEMO_KBD.bdf                               ;
+; RTL/VGA/VGA_Controller.sv                                  ;
+; RTL/VGA/back_ground_draw.sv                                ;
+; RTL/VGA/game_controller.sv                                 ;
+; RTL/VGA/objects_mux.sv                                     ;
+; RTL/VGA/smileyBitMap.sv                                    ;
+; RTL/VGA/smiley_move.sv                                     ;
+; RTL/VGA/square_Hart_object.sv                              ;
+; RTL/VGA/square_object.sv                                   ;
+; RTL/VGA/valX.bsf                                           ;
+; RTL/VGA/valX.qip                                           ;
+; RTL/VGA/valX.v                                             ;
+; RTL/VGA/valX_bb.v                                          ;
+; RTL/VGA/valX_inst.v                                        ;
+; RTL/VGA_BG.mif                                             ;
+; assignment_defaults.qdf                                    ;
+; constraints/DE10_Standard_Audio.sdc                        ;
+; constraints/pin.tcl                                        ;
+; db/stp4_auto_stripped.stp                                  ;
+; matrix_top_xy.v                                            ;
+; output_files/Chain1.cdf                                    ;
+; output_files/stp4.stp                                      ;
++------------------------------------------------------------+
+
+

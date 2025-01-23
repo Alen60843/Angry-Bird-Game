@@ -1,0 +1,91 @@
+Quartus Prime Archive log --	C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Lab1Demo.qarlog
+
+Archive:	C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Lab1Demo.qar
+Date:		Mon Dec 30 08:56:15 2024
+Quartus Prime		17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+	=========== Files Selected: ===========
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/CLK_31P5.cmp
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/CLK_31P5.qip
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/CLK_31P5.sip
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/CLK_31P5.spd
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/CLK_31P5.v
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/CLK_31P5/CLK_31P5_0002.qip
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/CLK_31P5/CLK_31P5_0002.v
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/CLK_31P5_sim/CLK_31P5.vo
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/DE10_Standard_Audio.sdc
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/House_X.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/KBDINTF.qxp
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Lab1Demo.qpf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Lab1Demo.qsf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Lab1Demo_assignment_defaults.qdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Number_position.bsf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Number_position.qip
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Number_position.v
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Number_position_bb.v
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/AUDIO/AUDIO.bdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/AUDIO/SinTable.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/AUDIO/TOP_AUDIO.bdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/AUDIO/ToneDecoder.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/AUDIO/addr_counter.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/AUDIO/audio_codec_controller/DualSerial2parallel.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/AUDIO/audio_codec_controller/audio_codec_controller.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/AUDIO/audio_codec_controller/clock_500.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/AUDIO/audio_codec_controller/i2c.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/AUDIO/prescaler.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/KEYBOARDX/TOP_KBD.bdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/KEYBOARDX/keyPad_decoder.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/KEYBOARDX/random.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/KEYBOARDX/simple_up_counter.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/Seg7/SEG7.SV
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/Bird_Block_T.bdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/HART_DISPLAY.bdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/HartsMatrixBitMap.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/House_Block_T.bdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/NumbersBitMap.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/Smiley_Block_T.bdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/TOP_VGA_DEMO_KBD.bdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/VGA_Controller.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/back_ground_draw.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/back_ground_draw_old.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/birdBitMap.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/bird_control.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/bird_move.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/game_controller.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/houseMatrixBitMap.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/objects_mux.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/plane_move.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/smileyBitMap.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/smiley_move.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/square_Hart_object.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/square_object.sv
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/valX.bsf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/valX.qip
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/valX.v
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/valX_bb.v
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/valX_inst.v
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/background2BitMap.mif
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/backgroundBitMap.mif
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/assignment_defaults.qdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/constraints/DE10_Standard_Audio.sdc
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/constraints/pin.tcl
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/db/stp4_auto_stripped.stp
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/matrix_top_xy.v
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/output_files/Chain1.cdf
+C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/output_files/stp4.stp
+	======= Total: 68 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Jan 19 09:59:05 2025
+Source archive file:	C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Lab1Demo.qar
+Archive was extracted into	C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Lab1Demo_restored/
+		 - successfully.
+
+
+******* Archived project restoration attempt on Sun Jan 19 10:01:02 2025
+Source archive file:	C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Lab1Demo.qar
+Archive was extracted into	C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Lab1Demo_restored/
+		 - successfully.

@@ -1,0 +1,86 @@
+
+State Machine - |TOP_VGA_DEMO_KBD|House_Block_T:inst14|houseMatrixBitMap:inst1|SM_Motion
+Name SM_Motion.PigDamageLoad SM_Motion.HouseLoad SM_Motion.Idle SM_Motion.PreGame SM_Motion.WinningScreen 
+SM_Motion.PreGame 0 0 0 0 0 
+SM_Motion.Idle 0 0 1 1 0 
+SM_Motion.HouseLoad 0 1 0 1 0 
+SM_Motion.PigDamageLoad 1 0 0 1 0 
+SM_Motion.WinningScreen 0 0 0 1 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|Bird_Block_T:inst11|bird_traces:inst16|SM_Motion
+Name SM_Motion.MOVE_ST 
+SM_Motion.IDLE_ST 0 
+SM_Motion.MOVE_ST 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|Bird_Block_T:inst11|bird_traces:inst17|SM_Motion
+Name SM_Motion.MOVE_ST 
+SM_Motion.IDLE_ST 0 
+SM_Motion.MOVE_ST 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|Bird_Block_T:inst11|Bird_move:inst4|SM_Motion
+Name SM_Motion.POSITION_CHANGE_ST SM_Motion.START_OF_FRAME_ST SM_Motion.MOVE_ST SM_Motion.IDLE_ST SM_Motion.POSITION_LIMITS_ST 
+SM_Motion.IDLE_ST 0 0 0 0 0 
+SM_Motion.MOVE_ST 0 0 1 1 0 
+SM_Motion.START_OF_FRAME_ST 0 1 0 1 0 
+SM_Motion.POSITION_CHANGE_ST 1 0 0 1 0 
+SM_Motion.POSITION_LIMITS_ST 0 0 0 1 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|Bird_Block_T:inst11|Bird_move:inst|SM_Motion
+Name SM_Motion.POSITION_CHANGE_ST SM_Motion.START_OF_FRAME_ST SM_Motion.MOVE_ST SM_Motion.IDLE_ST SM_Motion.POSITION_LIMITS_ST 
+SM_Motion.IDLE_ST 0 0 0 0 0 
+SM_Motion.MOVE_ST 0 0 1 1 0 
+SM_Motion.START_OF_FRAME_ST 0 1 0 1 0 
+SM_Motion.POSITION_CHANGE_ST 1 0 0 1 0 
+SM_Motion.POSITION_LIMITS_ST 0 0 0 1 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|Enemy_Block_T:inst30|Enemy_move:inst1|SM_Motion
+Name SM_Motion.POSITION_CHANGE_ST SM_Motion.WAIT_ST SM_Motion.MOVE_ST SM_Motion.IDLE_ST SM_Motion.POSITION_LIMITS_ST 
+SM_Motion.IDLE_ST 0 0 0 0 0 
+SM_Motion.MOVE_ST 0 0 1 1 0 
+SM_Motion.WAIT_ST 0 1 0 1 0 
+SM_Motion.POSITION_CHANGE_ST 1 0 0 1 0 
+SM_Motion.POSITION_LIMITS_ST 0 0 0 1 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|Score_Block_T:inst26|score_controller:inst|state
+Name state.IDLE_ST state.UPDATE_ST state.MINUS_ST 
+state.IDLE_ST 0 0 0 
+state.MINUS_ST 1 0 1 
+state.UPDATE_ST 1 1 0 
+
+State Machine - |TOP_VGA_DEMO_KBD|EndGame_Block_T:inst20|preGameBitMap:inst20|SM_Motion
+Name SM_Motion.SCREEN_OFF_ST 
+SM_Motion.SCREEN_ON_ST 0 
+SM_Motion.SCREEN_OFF_ST 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|EndGame_Block_T:inst20|Win2BitMap:inst17|SM_Motion
+Name SM_Motion.SCREEN_OFF_ST 
+SM_Motion.SCREEN_ON_ST 0 
+SM_Motion.SCREEN_OFF_ST 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|EndGame_Block_T:inst20|Win1BitMap:inst18|SM_Motion
+Name SM_Motion.SCREEN_OFF_ST 
+SM_Motion.SCREEN_ON_ST 0 
+SM_Motion.SCREEN_OFF_ST 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|EndGame_Block_T:inst20|BlackScreenBitMap:inst12|SM_Motion
+Name SM_Motion.SCREEN_OFF_ST 
+SM_Motion.SCREEN_ON_ST 0 
+SM_Motion.SCREEN_OFF_ST 1 
+
+State Machine - |TOP_VGA_DEMO_KBD|Bird_Block_T:inst11|bird_control:inst1|SM_Motion
+Name SM_Motion.IDLE_ST SM_Motion.SHOOT_ST SM_Motion.DELAY_ST 
+SM_Motion.IDLE_ST 0 0 0 
+SM_Motion.DELAY_ST 1 0 1 
+SM_Motion.SHOOT_ST 1 1 0 
+
+State Machine - |TOP_VGA_DEMO_KBD|PlaneLives_Block_T:inst23|PlaneLives_controller:inst|state
+Name state.IDLE_ST state.UPDATE_ST state.PLUS_ST 
+state.IDLE_ST 0 0 0 
+state.PLUS_ST 1 0 1 
+state.UPDATE_ST 1 1 0 
+
+State Machine - |TOP_VGA_DEMO_KBD|Smiley_Block_T:inst8|plane_move:inst|SM_Motion
+Name SM_Motion.IDLE_ST SM_Motion.START_OF_FRAME_ST SM_Motion.MOVE_ST 
+SM_Motion.IDLE_ST 0 0 0 
+SM_Motion.MOVE_ST 1 0 1 
+SM_Motion.START_OF_FRAME_ST 1 1 0 

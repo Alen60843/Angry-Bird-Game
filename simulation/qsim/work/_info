@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim
+vTOP_VGA_DEMO_KBD
+!s110 1737348440
+!i10b 1
+!s100 4PURi=9=_X;2:FBSia2mC2
+IDEHGzz=JZYZAQ8aI57hEk0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1737348436
+8Lab1Demo.vo
+FLab1Demo.vo
+L0 32
+Z2 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1737348437.000000
+!s107 Lab1Demo.vo|
+!s90 -work|work|Lab1Demo.vo|
+!i113 1
+Z3 o-work work
+Z4 tCvgOpt 0
+n@t@o@p_@v@g@a_@d@e@m@o_@k@b@d
+vTOP_VGA_DEMO_KBD_vlg_vec_tst
+!s110 1737348441
+!i10b 1
+!s100 O@EkOSYEQ0zZ@SYa8WHdQ1
+I64jF_=;L;;THgThcjE]I03
+R1
+R0
+w1737348429
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 30
+R2
+r1
+!s85 0
+31
+!s108 1737348440.000000
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R3
+R4
+n@t@o@p_@v@g@a_@d@e@m@o_@k@b@d_vlg_vec_tst

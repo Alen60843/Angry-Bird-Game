@@ -1,0 +1,113 @@
+EDA Netlist Writer report for Lab1Demo
+Mon Jan 20 09:19:16 2025
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. EDA Netlist Writer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Mon Jan 20 09:19:16 2025 ;
+; Revision Name             ; Lab1Demo                              ;
+; Top-level Entity Name     ; TOP_VGA_DEMO_KBD                      ;
+; Family                    ; Cyclone V                             ;
++---------------------------+---------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Copyright (C) 2017  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel MegaCore Function License Agreement, or other 
+    Info: applicable license agreement, including, without limitation, 
+    Info: that your use is for the sole purpose of programming logic 
+    Info: devices manufactured by Intel and sold by Intel or its 
+    Info: authorized distributors.  Please refer to the applicable 
+    Info: agreement for further details.
+    Info: Processing started: Mon Jan 20 09:19:14 2025
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off Lab1Demo -c Lab1Demo --vector_source=C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/Waveform2.vwf --testbench_file=C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim/Waveform2.vwf.vt
+Warning (201007): Can't find port "clk" in design
+Warning (201007): Can't find port "resetN" in design
+Warning (201007): Can't find port "startOfFrame" in design
+Warning (201007): Can't find port "Fire_The_Bird" in design
+Warning (201007): Can't find port "HitEdgeCode" in design
+Warning (201007): Can't find port "HitEdgeCode[3]" in design
+Warning (201007): Can't find port "HitEdgeCode[2]" in design
+Warning (201007): Can't find port "HitEdgeCode[1]" in design
+Warning (201007): Can't find port "HitEdgeCode[0]" in design
+Warning (201007): Can't find port "SM_Motion.IDLE_ST" in design
+Warning (201007): Can't find port "SM_Motion.MOVE_ST" in design
+Warning (201007): Can't find port "SM_Motion.POSITION_CHANGE_ST" in design
+Warning (201007): Can't find port "SM_Motion.POSITION_LIMITS_ST" in design
+Warning (201007): Can't find port "SM_Motion.START_OF_FRAME_ST" in design
+Warning (201005): Ignoring output pin "shoot" in vector source file when writing test bench files
+Warning (201007): Can't find port "topLeftX" in design
+Warning (201007): Can't find port "topLeftX[10]" in design
+Warning (201007): Can't find port "topLeftX[9]" in design
+Warning (201007): Can't find port "topLeftX[8]" in design
+Warning (201007): Can't find port "topLeftX[7]" in design
+Warning (201007): Can't find port "topLeftX[6]" in design
+Warning (201007): Can't find port "topLeftX[5]" in design
+Warning (201007): Can't find port "topLeftX[4]" in design
+Warning (201007): Can't find port "topLeftX[3]" in design
+Warning (201007): Can't find port "topLeftX[2]" in design
+Warning (201007): Can't find port "topLeftX[1]" in design
+Warning (201007): Can't find port "topLeftX[0]" in design
+Warning (201007): Can't find port "topLeftY" in design
+Warning (201007): Can't find port "topLeftY[10]" in design
+Warning (201007): Can't find port "topLeftY[9]" in design
+Warning (201007): Can't find port "topLeftY[8]" in design
+Warning (201007): Can't find port "topLeftY[7]" in design
+Warning (201007): Can't find port "topLeftY[6]" in design
+Warning (201007): Can't find port "topLeftY[5]" in design
+Warning (201007): Can't find port "topLeftY[4]" in design
+Warning (201007): Can't find port "topLeftY[3]" in design
+Warning (201007): Can't find port "topLeftY[2]" in design
+Warning (201007): Can't find port "topLeftY[1]" in design
+Warning (201007): Can't find port "topLeftY[0]" in design
+Info (201000): Generated Verilog Test Bench File C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/simulation/qsim/Waveform2.vwf.vt for simulation
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 39 warnings
+    Info: Peak virtual memory: 4833 megabytes
+    Info: Processing ended: Mon Jan 20 09:19:17 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:02
+
+

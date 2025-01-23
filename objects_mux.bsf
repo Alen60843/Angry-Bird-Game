@@ -1,0 +1,310 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 288 704)
+	(text "objects_mux" (rect 5 0 55 12)(font "Arial" ))
+	(text "inst" (rect 8 672 20 684)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" ))
+		(text "clk" (rect 21 27 31 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "resetN" (rect 0 0 27 12)(font "Arial" ))
+		(text "resetN" (rect 21 43 48 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "planeDrawingRequest" (rect 0 0 86 12)(font "Arial" ))
+		(text "planeDrawingRequest" (rect 21 59 107 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "planeRGB[7..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "planeRGB[7..0]" (rect 21 75 82 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "squareDrawingRequest" (rect 0 0 93 12)(font "Arial" ))
+		(text "squareDrawingRequest" (rect 21 91 114 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "squareRGB[7..0]" (rect 0 0 68 12)(font "Arial" ))
+		(text "squareRGB[7..0]" (rect 21 107 89 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "birdDrawingRequest" (rect 0 0 80 12)(font "Arial" ))
+		(text "birdDrawingRequest" (rect 21 123 101 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "birdRGB[7..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "birdRGB[7..0]" (rect 21 139 76 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "livesDrawingRequest" (rect 0 0 83 12)(font "Arial" ))
+		(text "livesDrawingRequest" (rect 21 155 104 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "livesRGB[7..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "livesRGB[7..0]" (rect 21 171 80 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "HouseDrawingRequest" (rect 0 0 92 12)(font "Arial" ))
+		(text "HouseDrawingRequest" (rect 21 187 113 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "houseRGB[7..0]" (rect 0 0 64 12)(font "Arial" ))
+		(text "houseRGB[7..0]" (rect 21 203 85 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "RGB_MIF[7..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "RGB_MIF[7..0]" (rect 21 219 84 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224)(line_width 3))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "EnemyDrawingRequest" (rect 0 0 96 12)(font "Arial" ))
+		(text "EnemyDrawingRequest" (rect 21 235 117 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(input)
+		(text "enemyRGB[7..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "enemyRGB[7..0]" (rect 21 251 90 263)(font "Arial" ))
+		(line (pt 0 256)(pt 16 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(input)
+		(text "gameoverDrawingRequest" (rect 0 0 107 12)(font "Arial" ))
+		(text "gameoverDrawingRequest" (rect 21 267 128 279)(font "Arial" ))
+		(line (pt 0 272)(pt 16 272)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(input)
+		(text "gameoverRGB[7..0]" (rect 0 0 82 12)(font "Arial" ))
+		(text "gameoverRGB[7..0]" (rect 21 283 103 295)(font "Arial" ))
+		(line (pt 0 288)(pt 16 288)(line_width 3))
+	)
+	(port
+		(pt 0 304)
+		(input)
+		(text "BlackScreenDrawingRequest" (rect 0 0 115 12)(font "Arial" ))
+		(text "BlackScreenDrawingRequest" (rect 21 299 136 311)(font "Arial" ))
+		(line (pt 0 304)(pt 16 304)(line_width 1))
+	)
+	(port
+		(pt 0 320)
+		(input)
+		(text "blackRGB[7..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "blackRGB[7..0]" (rect 21 315 82 327)(font "Arial" ))
+		(line (pt 0 320)(pt 16 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(input)
+		(text "victoryDrawingRequest" (rect 0 0 94 12)(font "Arial" ))
+		(text "victoryDrawingRequest" (rect 21 331 115 343)(font "Arial" ))
+		(line (pt 0 336)(pt 16 336)(line_width 1))
+	)
+	(port
+		(pt 0 352)
+		(input)
+		(text "victoryRGB[7..0]" (rect 0 0 69 12)(font "Arial" ))
+		(text "victoryRGB[7..0]" (rect 21 347 90 359)(font "Arial" ))
+		(line (pt 0 352)(pt 16 352)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "victory1DrawingRequest" (rect 0 0 97 12)(font "Arial" ))
+		(text "victory1DrawingRequest" (rect 21 363 118 375)(font "Arial" ))
+		(line (pt 0 368)(pt 16 368)(line_width 1))
+	)
+	(port
+		(pt 0 384)
+		(input)
+		(text "victory1RGB[7..0]" (rect 0 0 73 12)(font "Arial" ))
+		(text "victory1RGB[7..0]" (rect 21 379 94 391)(font "Arial" ))
+		(line (pt 0 384)(pt 16 384)(line_width 3))
+	)
+	(port
+		(pt 0 400)
+		(input)
+		(text "victory2DrawingRequest" (rect 0 0 99 12)(font "Arial" ))
+		(text "victory2DrawingRequest" (rect 21 395 120 407)(font "Arial" ))
+		(line (pt 0 400)(pt 16 400)(line_width 1))
+	)
+	(port
+		(pt 0 416)
+		(input)
+		(text "victory2RGB[7..0]" (rect 0 0 74 12)(font "Arial" ))
+		(text "victory2RGB[7..0]" (rect 21 411 95 423)(font "Arial" ))
+		(line (pt 0 416)(pt 16 416)(line_width 3))
+	)
+	(port
+		(pt 0 432)
+		(input)
+		(text "heartDrawingRequest" (rect 0 0 86 12)(font "Arial" ))
+		(text "heartDrawingRequest" (rect 21 427 107 439)(font "Arial" ))
+		(line (pt 0 432)(pt 16 432)(line_width 1))
+	)
+	(port
+		(pt 0 448)
+		(input)
+		(text "heartRGB[7..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "heartRGB[7..0]" (rect 21 443 82 455)(font "Arial" ))
+		(line (pt 0 448)(pt 16 448)(line_width 3))
+	)
+	(port
+		(pt 0 464)
+		(input)
+		(text "tracesDrawingRequest" (rect 0 0 90 12)(font "Arial" ))
+		(text "tracesDrawingRequest" (rect 21 459 111 471)(font "Arial" ))
+		(line (pt 0 464)(pt 16 464)(line_width 1))
+	)
+	(port
+		(pt 0 480)
+		(input)
+		(text "tracesRGB[7..0]" (rect 0 0 66 12)(font "Arial" ))
+		(text "tracesRGB[7..0]" (rect 21 475 87 487)(font "Arial" ))
+		(line (pt 0 480)(pt 16 480)(line_width 3))
+	)
+	(port
+		(pt 0 496)
+		(input)
+		(text "highDrawingRequest" (rect 0 0 81 12)(font "Arial" ))
+		(text "highDrawingRequest" (rect 21 491 102 503)(font "Arial" ))
+		(line (pt 0 496)(pt 16 496)(line_width 1))
+	)
+	(port
+		(pt 0 512)
+		(input)
+		(text "highRGB[7..0]" (rect 0 0 56 12)(font "Arial" ))
+		(text "highRGB[7..0]" (rect 21 507 77 519)(font "Arial" ))
+		(line (pt 0 512)(pt 16 512)(line_width 3))
+	)
+	(port
+		(pt 0 528)
+		(input)
+		(text "midDrawingRequest" (rect 0 0 80 12)(font "Arial" ))
+		(text "midDrawingRequest" (rect 21 523 101 535)(font "Arial" ))
+		(line (pt 0 528)(pt 16 528)(line_width 1))
+	)
+	(port
+		(pt 0 544)
+		(input)
+		(text "midRGB[7..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "midRGB[7..0]" (rect 21 539 76 551)(font "Arial" ))
+		(line (pt 0 544)(pt 16 544)(line_width 3))
+	)
+	(port
+		(pt 0 560)
+		(input)
+		(text "lowDrawingRequest" (rect 0 0 77 12)(font "Arial" ))
+		(text "lowDrawingRequest" (rect 21 555 98 567)(font "Arial" ))
+		(line (pt 0 560)(pt 16 560)(line_width 1))
+	)
+	(port
+		(pt 0 576)
+		(input)
+		(text "lowRGB[7..0]" (rect 0 0 53 12)(font "Arial" ))
+		(text "lowRGB[7..0]" (rect 21 571 74 583)(font "Arial" ))
+		(line (pt 0 576)(pt 16 576)(line_width 3))
+	)
+	(port
+		(pt 0 592)
+		(input)
+		(text "scoreDrawingRequest" (rect 0 0 88 12)(font "Arial" ))
+		(text "scoreDrawingRequest" (rect 21 587 109 599)(font "Arial" ))
+		(line (pt 0 592)(pt 16 592)(line_width 1))
+	)
+	(port
+		(pt 0 608)
+		(input)
+		(text "scoreRGB[7..0]" (rect 0 0 63 12)(font "Arial" ))
+		(text "scoreRGB[7..0]" (rect 21 603 84 615)(font "Arial" ))
+		(line (pt 0 608)(pt 16 608)(line_width 3))
+	)
+	(port
+		(pt 0 624)
+		(input)
+		(text "preGameDrawingRequest" (rect 0 0 103 12)(font "Arial" ))
+		(text "preGameDrawingRequest" (rect 21 619 124 631)(font "Arial" ))
+		(line (pt 0 624)(pt 16 624)(line_width 1))
+	)
+	(port
+		(pt 0 640)
+		(input)
+		(text "preGame[7..0]" (rect 0 0 57 12)(font "Arial" ))
+		(text "preGame[7..0]" (rect 21 635 78 647)(font "Arial" ))
+		(line (pt 0 640)(pt 16 640)(line_width 3))
+	)
+	(port
+		(pt 272 32)
+		(output)
+		(text "RGBOut[7..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "RGBOut[7..0]" (rect 196 27 251 39)(font "Arial" ))
+		(line (pt 272 32)(pt 256 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 256 672)(line_width 1))
+	)
+)

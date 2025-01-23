@@ -1,0 +1,200 @@
+// (c) Technion IIT, Department of Electrical Engineering 2023 
+//-- Alex Grinshpun Apr 2017
+//-- Dudy Nov 13 2017
+// SystemVerilog version Alex Grinshpun May 2018
+// coding convention dudy December 2018
+// updated Eyal Lev April 2023
+// updated to state machine Dudy March 2023 
+// update the hit and collision algoritm - Eyal Jan 2024
+
+module	bird_traces	(	
+ 
+					input	 logic clk,
+					
+					input	 logic resetN,
+					
+					input	 logic startOfFrame,     	 //short pulse every start of frame 30Hz 
+					
+					input  logic  [10:0] X_speed,
+					
+					input  logic  [10:0] Y_speed,
+					
+					input  logic signed [10:0] X_position,
+					
+					input	 logic signed [10:0] Y_position,
+					
+					input  logic   birdDR,
+					
+					input  logic   collision,
+					
+					
+
+					output logic signed 		 [10:0] topLeftX, // output the top left corner 
+					output logic signed	    [10:0] topLeftY,  // can be negative , if the object is partliy outside
+					output logic draw
+					
+					
+);
+
+
+// a module used to generate the  ball trajectory.  
+
+
+parameter int INITIAL_Y_SPEED = 0;
+parameter int Y_ACCEL = 10;
+
+
+logic signed [10:0] start_bird_x;
+logic signed [10:0] start_bird_y;
+
+
+
+const int   MAX_Y_SPEED = 200;
+const int	FIXED_POINT_MULTIPLIER = 64; // note it must be 2^n 
+// FIXED_POINT_MULTIPLIER is used to enable working with integers in high resolution so that 
+// we do all calculations with topLeftX_FixedPoint to get a resolution of 1/64 pixel in calcuatuions,
+// we devide at the end by FIXED_POINT_MULTIPLIER which must be 2^n, to return to the initial proportions
+
+
+// movement limits 
+const int   OBJECT_WIDTH_X = 32;
+const int   OBJECT_HIGHT_Y = 32;
+const int	SafetyMargin   =	2;
+
+const int	x_FRAME_LEFT	=	(SafetyMargin)* FIXED_POINT_MULTIPLIER; 
+const int	x_FRAME_RIGHT	=	(639 - SafetyMargin - OBJECT_WIDTH_X)* FIXED_POINT_MULTIPLIER; 
+const int	y_FRAME_TOP		=	(SafetyMargin) * FIXED_POINT_MULTIPLIER;
+const int	y_FRAME_BOTTOM	=	(479 -SafetyMargin - OBJECT_HIGHT_Y ) * FIXED_POINT_MULTIPLIER; //- OBJECT_HIGHT_Y
+
+
+enum  logic [2:0] {IDLE_ST,         	     // initial state
+						 MOVE_ST,			   	 // moving no colision 
+						 POSITION_CHANGE_ST,  	// position interpolate 
+						 UNDRAW_ST,            // check if inside the frame
+						 DRAW_ST
+						}  SM_Motion ;
+
+int Xspeed  ; // speed    
+int Yspeed  ; 
+int Xposition ; //position   
+int Yposition ;
+ 
+
+ 
+
+
+ 
+always_ff @(posedge clk or negedge resetN)
+begin : fsm_sync_proc
+
+	if ( !resetN ) begin 
+	
+		SM_Motion <= IDLE_ST ;
+	
+		Xspeed <= initialX_speed  ; 
+		Yspeed <= 0  ; 
+		Xposition <= 0 ; 
+		Yposition <= 0 ; 
+		draw <= 0;
+
+		
+	end 	
+	
+			Xposition <= X_position + OBJECT_WIDTH_X/2 - 30 ;
+			Yposition <= Y_position + OBJECT_WIDTH_X/2 - 30;
+	else begin
+			
+
+		case(SM_Motion)
+				
+		//------------
+			IDLE_ST: begin
+		//------------
+				
+				Xspeed <= X_speed ;
+				Yspeed <= Y_speed;
+				
+				Xposition <= Xposition * FIXED_POINT_MULTIPLIER; 
+				Yposition <= Yposition * FIXED_POINT_MULTIPLIER;
+				
+				if(birdDR) begin
+					SM_Motion <= MOVE_ST;	
+					draw <= 1;
+					end
+			end
+			
+				
+		//------------
+			MOVE_ST: begin
+		//------------
+				
+				if(collision)begin
+						SM_Motion <= IDLE_ST;
+						draw <= 0;
+						end	
+						
+					if (startOfFrame )
+						SM_Motion <= POSITION_CHANGE_ST ;
+				end		
+					
+				
+		//------------
+			POSITION_CHANGE_ST: begin
+		//------------
+				Yspeed <= Yspeed + Y_ACCEL ;
+				
+				Xposition <= Xposition  + Xspeed ;
+				Yposition <= Yposition 	+ Yspeed ;
+				
+		
+				SM_Motion <= UNDRAW_ST ; 
+	
+			end
+				
+		//------------
+			UNDRAW_ST: begin
+		//------------
+			    
+				
+				if(startOfFrame && !collision)begin
+					draw <= 0;
+					SM_Motion <= DRAW_ST;
+				end
+				
+				else
+					SM_Motion <= IDLE_ST;
+		
+	   	end
+			
+		//------------
+			DRAW_ST: begin
+		//------------
+			    
+				
+				if(startOfFrame && !collision)begin
+					draw <= 1;
+					SM_Motion <= MOVE_ST;
+				end
+				
+				else
+					SM_Motion <= IDLE_ST;
+				
+	
+			
+		
+	endcase  // case 
+
+		
+	end 
+
+end // end fsm_sync
+
+
+//return from FIXED point  trunc back to prame size parameters 
+  
+assign 	topLeftX = Xposition / FIXED_POINT_MULTIPLIER ;   // note it must be 2^n 
+assign 	topLeftY = Yposition / FIXED_POINT_MULTIPLIER ;   	
+
+endmodule	
+//---------------
+ 

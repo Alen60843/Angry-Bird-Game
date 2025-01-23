@@ -1,0 +1,4 @@
+Info (10281): Verilog HDL Declaration information at houseMatrixBitMap.sv(58): object "preGame" differs only in case from object "PreGame" in the same scope File: C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/houseMatrixBitMap.sv Line: 58
+Warning (10268): Verilog HDL information at win1Bitmap.sv(164): always construct contains both blocking and non-blocking assignments File: C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/win1Bitmap.sv Line: 164
+Warning (10268): Verilog HDL information at win2BitMap.sv(163): always construct contains both blocking and non-blocking assignments File: C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/win2BitMap.sv Line: 163
+Warning (10268): Verilog HDL information at preGameBitMap.sv(97): always construct contains both blocking and non-blocking assignments File: C:/Technion/lab1a/finalProject/VGA_ALEN_TOMER_restored/RTL/VGA/preGameBitMap.sv Line: 97
