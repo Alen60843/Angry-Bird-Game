@@ -30,14 +30,26 @@ The project uses the following modules:
 
 <ins>File Structure</ins>
 ```
-Angry-Bird-Game/
-|-- src/                  # Verilog source files
-|   |-- vga_controller.v  # VGA signal generator
-|   |-- game_logic.v      # Game logic module
-|   |-- input_controller.v # User input handler
+Angry-Birds-FPGA/
+|-- RTL/                  # Main project files
+|   |-- VGA/              # VGA controller and graphics files
+|   |   |-- *.sv          # VGA design files (Verilog/SystemVerilog)
+|   |   |-- *.bsf         # Block schematic files
+|   |   |-- *.mif         # Background image files for the game
+|   |-- Seg7/             # 7-segment display controller
+|   |   |-- *.sv          # Display control logic
+|   |-- KEYBOARDX/        # Keyboard input handler
+|   |   |-- *.sv          # User input handling logic
+|   |-- AUDIO/            # Audio controller modules
+|       |-- *.sv          # Audio signal generator files
 |-- simulation/           # Testbenches and simulation scripts
+|   |-- modelsim/         # Testbench for game logic
+|   |-- qsim/             # Testbench for VGA module
 |-- docs/                 # Documentation and design diagrams
+|   |-- system_diagram.pdf # Block diagram of the system
+|   |-- usage_guide.md    # User manual for setup and gameplay
 |-- constraints/          # FPGA constraints (e.g., .xdc or .qsf files)
+|   |-- constraints.xdc   # Pin assignments for FPGA
 |-- README.md             # Project documentation
 
 ```
